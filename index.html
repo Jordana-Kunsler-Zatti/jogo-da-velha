@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /><!--Definição do tipo de codificação usada pela pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Modo de Compatibilidade para o IE --> 
+    <title>Jogo da Velha</title> <!-- titulo da aplicação --> 
+    <script type="text/javascript" src="script.js"></script> <!-- link ao js que está sendo utilzado na pagina -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> <!-- link para o css que está sendo utilizado -->
+  </head>
+  <body>
+    <center>
+
+      <!-- Cabeçalho da página -->
+      <div id="container">
+        <img class="img-responsive" src="img/jogo-da-velha.png">
+        <h1>Jogo da Velha</h1>
+        <img class="img-responsive" src="img/velha.png">
+      </div>
+
+      <!-- Tabuleiro com do Jogo da Velha -->
+      <div id="grade-container">
+        <input id="bt-1" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 1)"/>
+        <input id="bt-2" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 2)"/>
+        <input id="bt-3" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 3)"/><br>
+        <input id="bt-4" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 4)"/>
+        <input id="bt-5" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 5)"/>
+        <input id="bt-6" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 6)"/><br>
+        <input id="bt-7" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 7)"/>
+        <input id="bt-8" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 8)"/>
+        <input id="bt-9" type="text" class="btn-primary" maxlength="1" onchange="validaJogada(event.target.value, 9)"/>
+      </div>
+
+      <!-- Botão para reiniciar o jogo -->
+      <button id="reiniciar" onclick="limpaTabuleiro()">
+        <img id="img" src="img/refresh.png">
+        reiniciar
+      </button>
+    </center>
+  </body>
+</html>
